@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="keywords" content="" />
+	<meta name="description" itemprop="description" content="" />
+	<title>政府数据开放平台</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/public.css" />
+	<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+	<link href="css/vendor/icheck/green.css" rel="stylesheet" />
+	<link href="css/vendor/icheck/blue02.css" rel="stylesheet" />
+	<link href="css/vendor/icheck/blue.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+</head>
+<body>
+
+<header>
+	<div class="NavBox">
+		<img class="FloatLeft NavLogo" src="img/logo_index.png" style="width: 280px; height: 40px;">
+		<div class="FloatRight NoLogonBox">
+			<!--<a class="FloatRight WhiteBtn MarginLeft20" href="register.html">注&nbsp;册</a>
+            <a class="FloatRight BlueBtn MarginLeft20" href="login.html">登&nbsp;录</a>-->
+			<div class="FloatRight UserGuideNav"><img class="FloatLeft" src="img/userGuide.png"><a
+					class="FloatRight UserGuideNav">用户指南</a></div>
+		</div>
+		<div class="FloatRight LogonBox">
+			<a class="FloatRight LogonTitle MarginLeft20 logout" href="javascript:void(0)">退出</a>
+			<a class="FloatRight LogonTitle MarginLeft20" >用户中心</a>
+			<a class="FloatRight LogonTitle MarginLeft20" >消息 <span id="unreadNum"></span></a>
+			<div class="FloatRight UserGuideNav"><img class="FloatLeft" src="img/userGuide.png"><a
+					class="FloatRight UserGuideNav" >用户指南</a></div>
+		</div>
+		<div class="NavCenterBox">
+			<a class="FloatLeft Nav" href="index.html">首页</a>
+			<div class="FloatLeft Nav">
+				<img class="FloatRight NavArrow" src="img/arrowNav.png">
+				开放数据
+				<div class="NavSub">
+					<a class="NavSubNow" href="list.html?dataType=0">文件</a>
+					<a class="NavSubNow" href="list.html?dataType=1">接口</a>
+					<a class="NavSubNow" href="list.html?dataType=3">应用</a>
+				</div>
+			</div>
+			<a class="FloatLeft Nav" href="directory.html">数据目录</a>
+			<a class="FloatLeft Nav" href="requirement.html">数据申请</a>
+			<div class="FloatLeft Nav">
+				<img class="FloatRight NavArrow" src="img/arrowNav.png">
+				数据服务
+				<div class="NavSub">
+					<a class="NavSubNow" href="application.html">应用展示</a>
+					<a class="NavSubNow" href="developmenttools.html">开发者工具</a>
+					<a class="NavSubNow" href="index_black.html">数据分析</a>
+					<a class="NavSubNow" href="http://map.tianditu.com/">地图服务</a>
+				</div>
+			</div>
+			<a class="NavNow FloatLeft Nav" href="board.html">政策文件</a>
+			<div class="ClearBoth"></div>
+		</div>
+		<div class="ClearBoth"></div>
+	</div>
+	<div class="HeaderBanner"><img src="img/headerbackground2.png"></div>
+
+
+</header>
+
+<div class="container">
+	<ol class="breadcrumb">
+		<li><a href="index.html">首页</a></li>
+		<li class="active">政策文件</li>
+	</ol>
+	<div class="page-header">
+		<h2>政策文件</h2>
+	</div>
+	<div class="page-list">
+		<ul id="board-container">
+		</ul>
+		<nav>
+			<ul class="pagination">
+			</ul>
+		</nav>
+
+	</div>
+</div>
+
+<div id="board-item-template" class="hidden">
+	<h2 class="hidden"><span></span></h2>
+	<li class="row">
+		<div class="col-sm-7 link board-item-title">
+			<a href="#">2016年一季度人力资源和社会保障主要统计数据</a>
+		</div>
+		<div class="col-sm-3 date-info board-item-date">2016年5月2日 发布</div>
+		<div class="col-sm-2 download">
+			<a class="board-item-download" href="#">下载</a>
+		</div>
+	</li>
+</div>
+
+<footer style="display: none">
+	<div class="container" style="text-align: center">
+    Copyright © 2003-2018 www.dsgdata.com 迪思杰 京ICP备05013295号
+		<div style="display: none" class="row" align="center">
+			<ul>
+				<li>
+					<a target="_blank">友情链接</a>
+				</li>
+				<li>
+					<a target="_blank">服务条款</a>
+				</li>
+				<li>
+					<a  target="_blank">隐私政策</a>
+				</li>
+				<li>
+					<a target="_blank">版权声明</a>
+				</li>
+				<li>
+					<a target="_blank">关于我们</a>
+				</li>
+			</ul>
+		</div>
+		<div  style="display: none" class="row">
+			<div class="col-sm-6">
+				<p id="zbdw">主办单位：迪思杰（北京）数码技术有限公司
+					<a id="zbdwa" target="blank" href="http://www.gzdsj.gov.cn/"> </a>
+				</p>
+				<p id="cbdw">承办单位： 迪思杰（北京）数码技术有限公司</p>
+				<p>技术支撑单位：迪思杰（北京）数码技术有限公司
+					<a id="jszc" target="blank" href="https://zrys.gzdata.com.cn/"> </a>
+				</p>
+				<p id="lxdh">联系电话：   010-82051581</p>
+			</div>
+			<div class="col-sm-1 row-img">
+				<!--<span id="_ideConac" style="display: inline;"><a href="//bszs.conac.cn/sitename?method=show&amp;id=71197FF4D2A0A80CE053022E1AAC500B" target="_blank"><img id="imgConac" vspace="0" hspace="0" border="0" src="//dcs.conac.cn/image/blue_error.png" data-bd-imgshare-binded="1"></a></span><script src="http://dcs.conac.cn/js/24/000/0000/60259194/CA240000000602591940006.js" type="text/javascript"></script><span id="_ideConac"></span>-->
+			</div>
+			<div class="col-sm-2 row-img">
+				<span style="display: table-cell; vertical-align: middle; height: 80px;">
+				<!--<a target="_blank">
+					<img src="img/jiucuo.png">
+				</a>-->
+				</span>
+			</div>
+			<div class="col-sm-3 text-left" style="border-left: 1px solid gray;">
+
+				<p>电子邮箱：
+					<a href="mailto:xxxxxxxxxxxxx" id="dzyx">XXXXXXX</a>
+				</p>
+				<p id="bah">备案号：XXXXXX</p>
+				<p id="bah">政府网站标识码：XXXXXX</p>
+				<img src="images/beiantubiao.png" style="float:left;">
+				<p style="float:left;margin: 0px 0px 0px 5px; color:#fff;">XX公网安备：XXXXXXX</p>
+				<a target="blank" class="wzba">
+					x</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- modal window -->
+<div class="modal fade text-center" id="warning">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<p class="message"></p>
+				<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">关闭</button>
+			</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!-- modal window -->
+<div class="modal fade text-center" id="confirm">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<p class="message"></p>
+				<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">取消</button>
+				<button type="button" class="btn btn-sm btn-primary">确定</button>
+			</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<script src="js/jquery.js"></script>
+
+<script src="js/vendor/jquery.min.js"></script>
+
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/jquery.cookie.js"></script>
+<script src="js/vendor/icheck.min.js"></script>
+<script src="js/vendor/mustache.min.js"></script>
+<script src="js/vendor/swiper-3.3.1.min.js"></script>
+
+<script src="js/vendor/iscroll.js"></script>
+
+
+<script src="js/main.js"></script>
+<script src="js/search.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/common/common.js"></script>
+
+<script type="text/javascript" src="js/Header.js"></script>
+
+<script src="js/board.js"></script>
+<script src="js/area-select.js"></script>
+</body>
+</html>
