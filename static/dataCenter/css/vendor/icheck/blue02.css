@@ -1,0 +1,94 @@
+/* iCheck plugin Square skin, green
+----------------------------------- */
+
+.icheckbox_square-blue02,
+.iradio_square-blue02 {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin-right: 2px;
+    padding: 0;
+    width: 21px;
+    height: 26px;
+    background: url(blue02.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+
+.icheckbox_square-blue02 {
+    background-position: 0 0;
+}
+   .icheckbox_square-blue02.hover {
+        background-position: -152px 0;
+    }
+   .icheckbox_square-blue02.checked{
+        background-position: -152px 0;
+    }
+   .icheckbox_square-blue02.disabled{
+        background-position: -72px 0;
+        cursor: default;
+    }
+    .icheckbox_square-blue02.checked.disabled{
+        background-position: -175px 0;
+    }
+
+.iradio_square-blue02{
+    background-position: -176px 0;
+}
+    .iradio_square-blue02.hover {
+        background-position: -137px 0;
+    }
+    .iradio_square-blue02.checked {
+        background-position: -137px 0;
+    }
+    .iradio_square-blue02.disabled {
+        background-position: -175px 0;
+        cursor: default;
+    }
+    .iradio_square-blue02.checked.disabled {
+        background-position: -216px 0;
+    }
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+    .icheckbox_square-blue02,
+    .iradio_square-blue02 {
+        background-image: url(blue02@2x.png);
+        width: 24px;
+        height: 33px;
+    }
+    .icheckbox_square-blue02 {
+    background-position: 0 0;
+}
+   .icheckbox_square-blue02.hover {
+        background-position: -171px 0;
+    }
+   .icheckbox_square-blue02.checked{
+        background-position: -171px 0;
+    }
+   .icheckbox_square-blue02.disabled{
+        background-position: -72px 0;
+        cursor: default;
+    }
+    .icheckbox_square-blue02.checked.disabled{
+        background-position: -175px 0;
+    }
+
+.iradio_square-blue02{
+    background-position: -221px 0;
+}
+    .iradio_square-blue02.hover {
+        background-position: -171px 0;
+    }
+    .iradio_square-blue02.checked {
+        background-position: -171px 0;
+    }
+    .iradio_square-blue02.disabled {
+        background-position: -175px 0;
+        cursor: default;
+    }
+    .iradio_square-blue02.checked.disabled {
+        background-position: -216px 0;
+    }
+}

@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#app,
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'PingFang SC', "Helvetica Neue", Helvetica, "microsoft yahei", arial, STHeiTi, sans-serif;
+}
+
+a {
+    text-decoration: none
+}
+
+.content {
+    width: auto;
+    padding: 10px;
+}
+
+.content-collapse {
+    left: 65px;
+}
+
+.container {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.crumbs {
+    margin-bottom: 20px;
+}
+
+.pagination {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.plugins-tips {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+.el-button+.el-tooltip {
+    margin-left: 10px;
+}
+
+.el-table tr:hover {
+    background: #f6faff;
+}
+
+.mgb20 {
+    margin-bottom: 20px;
+}
+
+.move-enter-active,
+.move-leave-active {
+    transition: opacity .5s;
+}
+
+.move-enter,
+.move-leave {
+    opacity: 0;
+}
+
+/*BaseForm*/
+
+.form-box {
+    width: 600px;
+}
+
+.form-box .line {
+    text-align: center;
+}
+
+.el-time-panel__content::after,
+.el-time-panel__content::before {
+    margin-top: -7px;
+}
+
+.el-time-spinner__wrapper .el-scrollbar__wrap:not(.el-scrollbar__wrap--hidden-default) {
+    padding-bottom: 0;
+}
+
+/*Upload*/
+
+.pure-button {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.g-core-image-corp-container .info-aside {
+    height: 45px;
+}
+
+.el-upload--text {
+    background-color: #fff;
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 360px;
+    height: 180px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.el-upload--text .el-icon-upload {
+    font-size: 67px;
+    color: #97a8be;
+    margin: 40px 0 16px;
+    line-height: 50px;
+}
+
+.el-upload--text {
+    color: #97a8be;
+    font-size: 14px;
+    text-align: center;
+}
+
+.el-upload--text em {
+    font-style: normal;
+}
+
+/*VueEditor*/
+
+.ql-container {
+    min-height: 400px;
+}
+
+.ql-snow .ql-tooltip {
+    transform: translateX(117.5px) translateY(10px) !important;
+}
+
+.editor-btn {
+    margin-top: 20px;
+}
+
+/*markdown*/
+
+.v-note-wrapper .v-note-panel {
+    /*min-height: 340px;*/
+}
+
+/*新增的*/
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.dialog-btn .el-button {
+    margin-left: 0;
+}
+
+.dialog-btn i {
+    margin-right: 2px;
+}
+
+.handle-box {
+    margin-bottom: 20px;
+}
+
+.handle-box i {
+    margin-right: 2px;
+}
+
+.pagination {
+    font-size: 13px;
+    color: #676a6c;
+}
+
+.handle-input {
+    width: 300px;
+    display: inline-block;
+}
+
+.useful {
+    display: block;
+    resize: vertical;
+    padding: 5px 15px;
+    line-height: 1.5;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: inherit;
+    color: #606266;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    -webkit-transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+    -o-transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+    transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+}
+
+.useful span {
+    margin: 5px;
+    cursor: pointer;
+    background-color: rgba(64, 158, 255, .1);
+    display: inline-block;
+    padding: 0 10px;
+    height: 32px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #409eff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid rgba(64, 158, 255, .2);
+    white-space: nowrap;
+}
+
+/*.el-input,.el-textarea__inner,.el-input__inner{
+    width: 230px;
+}*/
+
+.self-input {
+    width: 220px;
+}
+
+/*滚动条的样式*/
+
+.sidebar::-webkit-scrollbar {
+    width: 0;
+}
+
+/*
+width可以改变右边滚动条的宽度
+height可以改变下边滚动条的高度
+*/
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 9px;
+    box-sizing: border-box;
+}
+
+/*
+设置了滚动条按钮的样式图标，url我直接用了base64图片，无所谓啦
+*/
+
+/*  ::-webkit-scrollbar-button {
+    width: 9px;
+    height: 12px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAUCAYAAADRA14pAAADr0lEQVRYR71Yy04iQRQtE10IRiSBOLbOUvZmfkIlLHXjI+jCDzAm8w8TJKxZyENdqEui8BPuDVtsHCNGQcFEWUzdSt/KtbqqqZ44U0kn1V2n69xz63W6x5h9iXFoNADe521dftnibJlt+7PCjdmycpzz9vbmmvCTk5PzvK0NuNvbWyNuYWEBcbbUX8obSvBgMDAKiUQiUrDLi0nNPC9eYqwFfyWvTvAPHsm1JhqHEl9dXbHV1VUJo4Lv7u6k4JOTE7a5uSlxc3Nz/0ww5VXjR15VMIjFoop2+v2+EAJisaDoaDQqR/j+/l7gjo+PJW5ra0vUZ2dnqWDko1zqM+fi4kL0RxOMMaytrUneXC4ncMhFYzg4OBA4KpiK1Yl2Xl9fXSqWip6ampLEDw8PbrVa9U2S7e1tlkwmdYIBC6J1CXfOz8/ljAHRNIbFxcXs0tJShb/rHB4eShxw0RgymczPVCr1CwWrRCOJeQesVqtJUevr61JwPp+XxHt7e6xYLErc/v6+OqVHJvrl5cWt1+u+BEIMNzc3UvDj46NbqYD2zwViaLfbWsGBU+vs7EwIASIow+GQYSA8e5K4UCgIHBBBeX9/Z+VyWdT5CAliJabApdTr9UR/VDTGQPeO5+dngUMuGgPiQu3S3W7XHR8fl2IxaHjWbDalYAhwYmJCNH98fEht8KzVaukEA8a4WQIvdgKiacJjsZicWZgYwJZKJZlwiGF6etq3hpWk+24dzKAOODMzI4lhrZs6I2t9FB+2+3ghcZjIIF4YCJiFUJA31AjbCrY8N/9aMH2RCrbhDSP4OydKBETZ4W09fn3jV8SAG/Dnv/kFFtS22PC2eGdWOJNg3fnos3iXl5ci6HQ6zTxryVRbeXp6KjAbGxvMYCt1XDQZgpdy0UbV0lI+ikNuk9NCLN21fU4LQXA2ersgbP+fXBZiwG05jqNzWUE7NLwueHVmBxrpLg3c4OwoJ9aR+6udFgvhsugA/DeHZ3JaWi+tOi1q9bxdkHU6nU8uCxwPlkQiEeSjTaKFw8M+1JGmDg+4EUddFsSA3KFGWGcAVlZWBId3zrGnpyff4Z/NZgUmHo+bBIc2Hgqv+Cy14Q61hlUDgNkEcs8AMPXwR8zOzo48/Olc5vWRaxh4qctCsdCPajzAcFBOrI8yHtpdWj2HG42G6G95eZl55yHDLyokOjo6EtXd3V1Gvqh061e3jAAnjAfloi/Tcxi4KR/FIXeYc9jmFwpw2PwGUgY58NaG1/rX0h9d1DUzJEP0JgAAAABJRU5ErkJggg==);
+    background-color: transparent;
+    background-repeat: no-repeat;
+  }*/
+
+/*
+corner角落的意思，可以改变Y滚动条与X滚动条交叉的右下角的样式
+*/
+
+::-webkit-scrollbar-corner {
+    background-color: #f1f1f1 !important;
+    -webkit-border-radius: 1px;
+}
+
+/*
+这就是滚动条的样式了
+*/
+
+::-webkit-scrollbar-thumb {
+    background-color: #0589bb !important;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    -webkit-border-radius: 5px;
+}
+
+/*
+悬浮时
+*/
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #05b0f1 !important;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+}
+
+/*
+滚动条空白处的样式
+*/
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 5px;
+}
+
+.el-badge__content.is-fixed {
+    top: 6px !important;
+    right: 0 !important;
+    background: #67c23a;
+    color: #f5f5f5
+}
+
+.tree-node-item .el-badge__content {
+    padding: 0px 5px !important;
+    margin-top: 4px;
+}
+
+.tree-node-item>span {
+    display: inline-block;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 重置popover组件的最小宽度 */
+
+.el-popover {
+    min-width: 50px;
+}
+
+/* 隐藏表头 */
+
+.fn-history .el-table thead {
+    display: none;
+}
+
+/* 表的鼠标样式 */
+
+.fn-history .cell {
+    cursor: pointer;
+}
+
+/*表单*/
+
+/*.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 2px 10px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}*/
+
+#tree-input {
+    height: 24px;
+    padding: 0 1px;
+    width: 100%
+}
+
+/* 重置表格样式 */
+
+#templateBox {
+    padding: 15px 20px;
+    border-radius: 4px;
+    border: 1px solid #ebeef5;
+    background-color: #fff;
+    overflow: hidden;
+    color: #303133;
+    transition: .3s;
+}
+
+.el-pagination {
+    text-align: right;
+    margin: 20px 0;
+}
+
+.el-table {
+    /*  margin-top: 20px;
+    border: 1px solid #9c9ea4;
+    border-right: none; */
+    /* border: 1px solid #9c9ea4;
+    border-right: none; */
+}
+
+/* 树 */
+
+.addTree .span-node,
+.addTree .span-node .el-button {
+    color: #c0c4cc;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: #fff;
+}
+
+.addTree .el-tree-node__content:hover,
+.addTree .el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content {
+    background-color: transparent;
+}
+
+.el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content {
+    background-color: #ebeef5;
+}
+
+/* .el-table th,
+.el-table td,
+.el-table th.is-leaf {
+    border: 1px solid #9c9ea4;
+    border-top: none;
+    border-left: none;
+}
+
+.el-table__expanded-cell .el-table td,
+.el-table__expanded-cell .el-table th,
+.el-table__expanded-cell .el-table th.is-leaf {
+    border: none;
+}
+
+.el-table__expanded-cell .el-table th.is-leaf {
+    border-bottom: 1px solid #ebeef5;
+} */
